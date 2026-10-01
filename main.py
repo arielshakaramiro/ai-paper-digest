@@ -167,6 +167,11 @@ def fetch_papers(categories: list[str], limit: int) -> list[dict]:
     return parse_feed(http_request(f"{ARXIV_API}?{params}"))
 
 
+def fetch_by_ids(ids: list[str]) -> list[dict]:
+    params = urllib.parse.urlencode({"id_list": ",".join(ids), "max_results": len(ids)})
+    return parse_feed(http_request(f"{ARXIV_API}?{params}"))
+
+
 # --------------------------------------------------------------------------- #
 # Ranking
 # --------------------------------------------------------------------------- #
@@ -237,6 +242,20 @@ def llm_summarize(paper: dict, lang: str) -> str | None:
     except Exception as e:  # noqa: BLE001
         print(f"  ! LLM failed for {paper['id']}: {e}", file=sys.stderr)
         return None
+
+
+def summarize_all(picks: list[dict], langs: list[str]) -> None:
+    mode = f"LLM ({LLM_MODEL})" if LLM_API_KEY else "abstract fallback (no LLM_API_KEY)"
+    print(f"Summarizing {len(picks)} papers in {langs} via {mode}")
+    for i, p in enumerate(picks, 1):
+        p.setdefault("summaries", {})
+        for lang in langs:
+            summary = llm_summarize(p, lang)
+            # Without an LLM the abstract (English) is the only text available.
+            p["summaries"][lang] = summary or f"TL;DR: {fallback_summary(p['abstract'])}"
+            if LLM_API_KEY:
+                time.sleep(CONFIG.get("llm_delay_seconds", 2))
+        print(f"  [{i}/{len(picks)}] {p['title'][:70]}")
 
 
 # --------------------------------------------------------------------------- #
@@ -341,6 +360,65 @@ def update_readme(date_str: str, digest_paths: dict[str, Path], picks: list[dict
     README.write_text(pattern.sub(lambda _: "\n".join(block), text), encoding="utf-8")
 
 
+def backfill_languages(date_str: str, langs: list[str]) -> int:
+    """Today's digest exists but some languages are missing (e.g. a language was
+    just added to config). Rebuild the missing ones from the same papers."""
+    missing = [c for c in langs if not digest_path_for(date_str, c).exists()]
+    if not missing:
+        print(f"Digest for {date_str} already exists in all languages. Nothing to do.")
+        return 0
+    if not CSV_FILE.exists():
+        print("No papers.csv to rebuild from. Skipping.")
+        return 0
+    with CSV_FILE.open(encoding="utf-8") as f:
+        rows = [r for r in csv.DictReader(f) if r["date"] == date_str]
+    if not rows:
+        print(f"No papers recorded for {date_str}. Skipping.")
+        return 0
+
+    print(f"Backfilling {missing} for {date_str} ({len(rows)} papers)")
+    fetched = {p["id"]: p for p in fetch_by_ids([r["arxiv_id"] for r in rows])}
+    picks = []
+    for r in rows:  # keep the original ranking order
+        p = fetched.get(r["arxiv_id"])
+        if p:
+            p["score"] = int(r["score"])
+            picks.append(p)
+
+    # "new papers" count from the existing primary digest intro, if available
+    total_new = len(picks)
+    primary = digest_path_for(date_str, langs[0])
+    if primary.exists():
+        m = re.search(r"(\d+) (?:new papers|paper baru)", primary.read_text(encoding="utf-8"))
+        if m:
+            total_new = int(m.group(1))
+
+    summarize_all(picks, missing)
+    for c in missing:
+        print(f"Wrote {write_digest(date_str, picks, total_new, c, langs).relative_to(ROOT)}")
+
+    # Rewrite every other language's file only to refresh the language switcher links.
+    for c in langs:
+        if c in missing:
+            continue
+        path = digest_path_for(date_str, c)
+        text = path.read_text(encoding="utf-8")
+        switch = " · ".join(
+            f"{LANGS[x]['flag']} {LANGS[x]['label']}" if x == c
+            else f"[{LANGS[x]['flag']} {LANGS[x]['label']}]({digest_path_for(date_str, x).name})"
+            for x in langs
+        )
+        head, _, rest = text.partition("\n\n")
+        if rest.startswith(("🇬🇧", "🇮🇩", "[🇬🇧", "[🇮🇩")):
+            rest = rest.partition("\n\n")[2]
+        path.write_text(f"{head}\n\n{switch}\n\n{rest}", encoding="utf-8")
+
+    with CSV_FILE.open(encoding="utf-8") as f:
+        total = sum(1 for _ in f) - 1
+    update_readme(date_str, {c: digest_path_for(date_str, c) for c in langs}, picks, total)
+    return 0
+
+
 # --------------------------------------------------------------------------- #
 # Main
 # --------------------------------------------------------------------------- #
@@ -351,8 +429,7 @@ def main() -> int:
     langs = configured_languages()
 
     if digest_path_for(date_str, langs[0]).exists():
-        print(f"Digest for {date_str} already exists. Nothing to do.")
-        return 0
+        return backfill_languages(date_str, langs)
 
     print(f"Fetching arXiv: {CONFIG['categories']}")
     papers = fetch_papers(CONFIG["categories"], CONFIG["fetch_limit"])
@@ -370,17 +447,7 @@ def main() -> int:
     fresh.sort(key=lambda p: (p["score"], p["published"]), reverse=True)
     picks = fresh[: CONFIG["digest_size"]]
 
-    mode = f"LLM ({LLM_MODEL})" if LLM_API_KEY else "abstract fallback (no LLM_API_KEY)"
-    print(f"Summarizing {len(picks)} papers in {langs} via {mode}")
-    for i, p in enumerate(picks, 1):
-        p["summaries"] = {}
-        for lang in langs:
-            summary = llm_summarize(p, lang)
-            # Without an LLM the abstract (English) is the only text available.
-            p["summaries"][lang] = summary or f"TL;DR: {fallback_summary(p['abstract'])}"
-            if LLM_API_KEY:
-                time.sleep(CONFIG.get("llm_delay_seconds", 2))
-        print(f"  [{i}/{len(picks)}] {p['title'][:70]}")
+    summarize_all(picks, langs)
 
     digest_paths = {lang: write_digest(date_str, picks, len(fresh), lang, langs) for lang in langs}
     total = append_csv([{
