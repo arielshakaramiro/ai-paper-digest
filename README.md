@@ -7,7 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-_The first digest will appear here after the workflow runs._
+### 📅 2026-10-01
+
+1. [NavHarness: Adaptive Goals for Agentic Vision-Language Navigation](https://arxiv.org/abs/2609.39915)
+2. [EviRover: Reinforcing Agentic Perception Beyond a Glance](https://arxiv.org/abs/2609.40230)
+3. [LongEmo: Towards Emotion Understanding and Reasoning in Long Videos](https://arxiv.org/abs/2609.40079)
+4. [WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](https://arxiv.org/abs/2609.40325)
+5. [Agent Error Dataset: Scaling 50,000 Error--Diagnosis Pairs for Failure Analysis and Error-Aware Post-Training](https://arxiv.org/abs/2609.40111)
+
+➡️ [Read the full digest](digests/2026/10/2026-10-01.md)
+
+**Stats:** 1 digests · 10 papers archived · last updated 2026-10-01
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
