@@ -1,0 +1,31 @@
+{
+  "categories": ["cs.AI", "cs.LG", "cs.CL", "cs.CV"],
+  "fetch_limit": 150,
+  "digest_size": 10,
+  "readme_preview": 5,
+  "timezone": "Asia/Jakarta",
+  "language": "English",
+  "llm_delay_seconds": 2,
+  "keywords": {
+    "agent": 3,
+    "agentic": 3,
+    "retrieval": 2,
+    "rag": 3,
+    "reasoning": 2,
+    "benchmark": 1,
+    "llm": 2,
+    "large language model": 2,
+    "multimodal": 2,
+    "vision-language": 2,
+    "fine-tuning": 2,
+    "lora": 2,
+    "quantization": 2,
+    "inference": 1,
+    "tool use": 3,
+    "evaluation": 1,
+    "hallucination": 2,
+    "alignment": 1,
+    "indonesian": 4,
+    "low-resource": 2
+  }
+}
