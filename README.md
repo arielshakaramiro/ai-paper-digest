@@ -15,7 +15,7 @@ The archive grows into a searchable record of what the field is publishing, plus
 4. [WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](https://arxiv.org/abs/2609.40325)
 5. [Agent Error Dataset: Scaling 50,000 Error--Diagnosis Pairs for Failure Analysis and Error-Aware Post-Training](https://arxiv.org/abs/2609.40111)
 
-➡️ [Read the full digest](digests/2026/10/2026-10-01.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-01.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-01.id.md)
 
 **Stats:** 1 digests · 10 papers archived · last updated 2026-10-01
 <!-- LATEST_DIGEST_END -->
