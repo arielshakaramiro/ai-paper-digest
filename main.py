@@ -52,6 +52,58 @@ README_END = "<!-- LATEST_DIGEST_END -->"
 SEEN_LIMIT = 5000
 CSV_FIELDS = ["date", "arxiv_id", "title", "authors", "categories", "published", "score", "url"]
 
+# Output languages. The first entry in config "languages" is the primary digest
+# (YYYY-MM-DD.md); every other language gets YYYY-MM-DD.<suffix>.md.
+LANGS = {
+    "en": {
+        "name": "English",
+        "suffix": "",
+        "label": "English",
+        "flag": "🇬🇧",
+        "why": "Why it matters",
+        "heading": "AI Paper Digest",
+        "intro": "Top {n} of {total} new papers in {cats}, ranked by relevance.",
+        "authors": "Authors",
+        "categories": "Categories",
+        "published": "Published",
+        "relevance": "Relevance",
+        "more": "more",
+        "abstract": "Abstract",
+        "full": "Read the full digest",
+    },
+    "id": {
+        "name": "Indonesian (Bahasa Indonesia)",
+        "suffix": ".id",
+        "label": "Bahasa Indonesia",
+        "flag": "🇮🇩",
+        "why": "Kenapa penting",
+        "heading": "Ringkasan Paper AI",
+        "intro": "{n} teratas dari {total} paper baru di {cats}, diurutkan berdasarkan relevansi.",
+        "authors": "Penulis",
+        "categories": "Kategori",
+        "published": "Terbit",
+        "relevance": "Relevansi",
+        "more": "lainnya",
+        "abstract": "Abstrak",
+        "full": "Baca digest lengkap",
+    },
+}
+
+
+def configured_languages() -> list[str]:
+    langs = CONFIG.get("languages")
+    if not langs:  # backward compatible with the old single "language" setting
+        langs = ["id" if CONFIG.get("language", "").lower().startswith(("indo", "bahasa")) else "en"]
+    unknown = [code for code in langs if code not in LANGS]
+    if unknown:
+        raise SystemExit(f"Unknown language code(s) in config: {unknown}. Supported: {list(LANGS)}")
+    return langs
+
+
+def digest_path_for(date_str: str, lang: str) -> Path:
+    y, m, _ = date_str.split("-")
+    return DIGEST_DIR / y / m / f"{date_str}{LANGS[lang]['suffix']}.md"
+
 
 # --------------------------------------------------------------------------- #
 # HTTP helpers
@@ -135,14 +187,20 @@ def fallback_summary(abstract: str, sentences: int = 2) -> str:
     return " ".join(parts[:sentences])
 
 
-def llm_summarize(paper: dict, language: str) -> str | None:
+def llm_summarize(paper: dict, lang: str) -> str | None:
     if not LLM_API_KEY:
         return None
+    meta = LANGS[lang]
+    extra = ""
+    if lang == "id":
+        extra = ("Write natural, formal-but-friendly Indonesian. Keep established technical terms "
+                 "in English (e.g. fine-tuning, benchmark, retrieval, agent, LLM).\n")
     prompt = (
-        f"Summarize this research paper for busy AI engineers, in {language}.\n"
-        "Format exactly:\n"
+        f"Summarize this research paper for busy AI engineers. Write the answer in {meta['name']}.\n"
+        f"{extra}"
+        "Format exactly (keep the labels as written, nothing else):\n"
         "TL;DR: <2 sentences, plain language, no hype>\n"
-        "Why it matters: <1 sentence on the practical relevance>\n\n"
+        f"{meta['why']}: <1 sentence on the practical relevance>\n\n"
         f"Title: {paper['title']}\n\nAbstract: {paper['abstract']}"
     )
     payload = {
@@ -205,35 +263,47 @@ def append_csv(rows: list[dict]) -> int:
         return sum(1 for _ in f) - 1
 
 
-def format_authors(authors: list[str], limit: int = 4) -> str:
+def format_authors(authors: list[str], more: str = "more", limit: int = 4) -> str:
     if len(authors) <= limit:
         return ", ".join(authors)
-    return ", ".join(authors[:limit]) + f" +{len(authors) - limit} more"
+    return ", ".join(authors[:limit]) + f" +{len(authors) - limit} {more}"
 
 
-def write_digest(date_str: str, picks: list[dict], total_fetched: int) -> Path:
-    y, m, _ = date_str.split("-")
-    path = DIGEST_DIR / y / m / f"{date_str}.md"
+def format_summary(text: str) -> str:
+    # Trim each line and keep line breaks when the Markdown is rendered.
+    lines = [ln.strip() for ln in text.strip().splitlines() if ln.strip()]
+    return "  \n".join(lines)
+
+
+def write_digest(date_str: str, picks: list[dict], total_fetched: int, lang: str,
+                 all_langs: list[str]) -> Path:
+    t = LANGS[lang]
+    path = digest_path_for(date_str, lang)
     path.parent.mkdir(parents=True, exist_ok=True)
 
-    lines = [
-        f"# AI Paper Digest — {date_str}",
-        "",
-        f"Top {len(picks)} of {total_fetched} new papers in "
-        f"{', '.join(CONFIG['categories'])}, ranked by relevance.",
+    switch = " · ".join(
+        f"{LANGS[c]['flag']} {LANGS[c]['label']}" if c == lang
+        else f"[{LANGS[c]['flag']} {LANGS[c]['label']}]({digest_path_for(date_str, c).name})"
+        for c in all_langs
+    )
+    lines = [f"# {t['heading']} — {date_str}", ""]
+    if len(all_langs) > 1:
+        lines += [switch, ""]
+    lines += [
+        t["intro"].format(n=len(picks), total=total_fetched, cats=", ".join(CONFIG["categories"])),
         "",
     ]
     for i, p in enumerate(picks, 1):
         lines += [
             f"## {i}. [{p['title']}]({p['url']})",
             "",
-            f"**Authors:** {format_authors(p['authors'])}  ",
-            f"**Categories:** {', '.join(p['categories'][:4])} · **Published:** {p['published']} "
-            f"· **Relevance:** {p['score']}",
+            f"**{t['authors']}:** {format_authors(p['authors'], t['more'])}  ",
+            f"**{t['categories']}:** {', '.join(p['categories'][:4])} · **{t['published']}:** {p['published']} "
+            f"· **{t['relevance']}:** {p['score']}",
             "",
-            re.sub(r"\n+", "  \n", p["summary"].strip()),  # keep line breaks in rendered Markdown
+            format_summary(p["summaries"][lang]),
             "",
-            f"[Abstract]({p['url']}) · [PDF](https://arxiv.org/pdf/{p['id']})",
+            f"[{t['abstract']}]({p['url']}) · [PDF](https://arxiv.org/pdf/{p['id']})",
             "",
             "---",
             "",
@@ -242,22 +312,27 @@ def write_digest(date_str: str, picks: list[dict], total_fetched: int) -> Path:
     return path
 
 
-def update_readme(date_str: str, digest_path: Path, picks: list[dict], total_papers: int) -> None:
+def update_readme(date_str: str, digest_paths: dict[str, Path], picks: list[dict],
+                  total_papers: int) -> None:
     if not README.exists():
         return
     text = README.read_text(encoding="utf-8")
     if README_START not in text or README_END not in text:
         return
-    digest_count = sum(1 for _ in DIGEST_DIR.rglob("*.md"))
-    rel = digest_path.relative_to(ROOT).as_posix()
+    # one digest per day, counted once regardless of how many languages it has
+    digest_count = len({f.name.split(".")[0] for f in DIGEST_DIR.rglob("*.md")})
     preview = picks[: CONFIG.get("readme_preview", 5)]
+    links = " · ".join(
+        f"{LANGS[c]['flag']} [{LANGS[c]['full']}]({path.relative_to(ROOT).as_posix()})"
+        for c, path in digest_paths.items()
+    )
     block = [
         README_START,
         f"### 📅 {date_str}",
         "",
         *[f"{i}. [{p['title']}]({p['url']})" for i, p in enumerate(preview, 1)],
         "",
-        f"➡️ [Read the full digest]({rel})",
+        f"➡️ {links}",
         "",
         f"**Stats:** {digest_count} digests · {total_papers} papers archived · last updated {date_str}",
         README_END,
@@ -273,8 +348,9 @@ def main() -> int:
     DATA_DIR.mkdir(exist_ok=True)
     tz = ZoneInfo(CONFIG.get("timezone", "UTC"))
     date_str = datetime.now(tz).strftime("%Y-%m-%d")
+    langs = configured_languages()
 
-    if (DIGEST_DIR / date_str[:4] / date_str[5:7] / f"{date_str}.md").exists():
+    if digest_path_for(date_str, langs[0]).exists():
         print(f"Digest for {date_str} already exists. Nothing to do.")
         return 0
 
@@ -295,15 +371,18 @@ def main() -> int:
     picks = fresh[: CONFIG["digest_size"]]
 
     mode = f"LLM ({LLM_MODEL})" if LLM_API_KEY else "abstract fallback (no LLM_API_KEY)"
-    print(f"Summarizing {len(picks)} papers via {mode}")
+    print(f"Summarizing {len(picks)} papers in {langs} via {mode}")
     for i, p in enumerate(picks, 1):
-        summary = llm_summarize(p, CONFIG.get("language", "English"))
-        p["summary"] = summary or f"TL;DR: {fallback_summary(p['abstract'])}"
+        p["summaries"] = {}
+        for lang in langs:
+            summary = llm_summarize(p, lang)
+            # Without an LLM the abstract (English) is the only text available.
+            p["summaries"][lang] = summary or f"TL;DR: {fallback_summary(p['abstract'])}"
+            if LLM_API_KEY:
+                time.sleep(CONFIG.get("llm_delay_seconds", 2))
         print(f"  [{i}/{len(picks)}] {p['title'][:70]}")
-        if LLM_API_KEY and i < len(picks):
-            time.sleep(CONFIG.get("llm_delay_seconds", 2))
 
-    digest_path = write_digest(date_str, picks, len(fresh))
+    digest_paths = {lang: write_digest(date_str, picks, len(fresh), lang, langs) for lang in langs}
     total = append_csv([{
         "date": date_str,
         "arxiv_id": p["id"],
@@ -315,9 +394,11 @@ def main() -> int:
         "url": p["url"],
     } for p in picks])
     save_seen(seen + [p["id"] for p in fresh])
-    update_readme(date_str, digest_path, picks, total)
+    update_readme(date_str, digest_paths, picks, total)
 
-    print(f"Wrote {digest_path.relative_to(ROOT)} ({total} papers archived)")
+    for path in digest_paths.values():
+        print(f"Wrote {path.relative_to(ROOT)}")
+    print(f"{total} papers archived")
     return 0
 
 

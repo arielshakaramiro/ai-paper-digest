@@ -1,6 +1,6 @@
 # AI Paper Digest
 
-A daily, automatically curated digest of new AI/ML research from arXiv. Every morning a GitHub Actions workflow fetches the latest papers in `cs.AI`, `cs.LG`, `cs.CL` and `cs.CV`, ranks them by relevance to applied AI engineering (agents, RAG, LLM inference, fine-tuning, multimodal), writes a short plain-language summary for each of the top picks, and commits the result to this repository.
+A daily, automatically curated digest of new AI/ML research from arXiv. Every morning a GitHub Actions workflow fetches the latest papers in `cs.AI`, `cs.LG`, `cs.CL` and `cs.CV`, ranks them by relevance to applied AI engineering (agents, RAG, LLM inference, fine-tuning, multimodal), writes a short plain-language summary for each of the top picks in English and Bahasa Indonesia, and commits the result to this repository.
 
 The archive grows into a searchable record of what the field is publishing, plus a CSV dataset you can analyze for trends.
 
@@ -30,7 +30,7 @@ arXiv API ──► dedupe (data/seen.json) ──► keyword ranking ──► 
 2. **Deduplicate.** Skips any paper already processed on a previous day.
 3. **Rank.** Scores each paper against weighted keywords in `config.json` (title matches count double).
 4. **Summarize.** Sends the top papers to any OpenAI-compatible chat endpoint for a two-sentence TL;DR and a one-line "why it matters". Without an API key it falls back to the first sentences of the abstract, so the pipeline never breaks.
-5. **Publish.** Writes `digests/YYYY/MM/YYYY-MM-DD.md`, appends to `data/papers.csv`, and refreshes the section above.
+5. **Publish.** Writes `digests/YYYY/MM/YYYY-MM-DD.md` (English) and `YYYY-MM-DD.id.md` (Indonesian), appends to `data/papers.csv`, and refreshes the section above.
 
 If there are no new papers (arXiv doesn't publish on weekends), nothing changes and no commit is made. Every commit in this repo contains real content.
 
@@ -39,8 +39,8 @@ If there are no new papers (arXiv doesn't publish on weekends), nothing changes 
 | Path | Contents |
 |------|----------|
 | `main.py` | The whole pipeline, standard library only |
-| `config.json` | Categories, digest size, keyword weights, timezone, summary language |
-| `digests/` | One Markdown digest per day |
+| `config.json` | Categories, digest size, keyword weights, timezone, output languages |
+| `digests/` | One Markdown digest per day per language |
 | `data/papers.csv` | Every paper that made a digest (date, id, title, authors, categories, score, url) |
 | `data/seen.json` | Processed arXiv IDs used for deduplication |
 | `.github/workflows/daily-digest.yml` | Scheduled workflow (08:17 WIB daily) |
@@ -88,7 +88,7 @@ Edit `config.json`:
 - `categories`: any [arXiv category](https://arxiv.org/category_taxonomy), e.g. add `cs.RO` for robotics or `cs.CR` for security.
 - `keywords`: terms and weights that decide what rises to the top.
 - `digest_size`: papers per digest.
-- `language`: summary language, e.g. `"Indonesian"`.
+- `languages`: output languages, e.g. `["en", "id"]`. The first one is the main digest (`YYYY-MM-DD.md`); each extra language gets its own file (`YYYY-MM-DD.id.md`) with localized headings. Supported: `en` (English), `id` (Bahasa Indonesia). Each language costs one LLM call per paper.
 
 ## License
 

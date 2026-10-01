@@ -4,7 +4,7 @@
   "digest_size": 10,
   "readme_preview": 5,
   "timezone": "Asia/Jakarta",
-  "language": "English",
+  "languages": ["en", "id"],
   "llm_delay_seconds": 2,
   "keywords": {
     "agent": 3,
