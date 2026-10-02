@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-10-01
+### 📅 2026-10-02
 
-1. [NavHarness: Adaptive Goals for Agentic Vision-Language Navigation](https://arxiv.org/abs/2609.39915)
-2. [EviRover: Reinforcing Agentic Perception Beyond a Glance](https://arxiv.org/abs/2609.40230)
-3. [LongEmo: Towards Emotion Understanding and Reasoning in Long Videos](https://arxiv.org/abs/2609.40079)
-4. [WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](https://arxiv.org/abs/2609.40325)
-5. [Agent Error Dataset: Scaling 50,000 Error--Diagnosis Pairs for Failure Analysis and Error-Aware Post-Training](https://arxiv.org/abs/2609.40111)
+1. [OmniSeek: Native Tool Integration for Multi-turn Audio-Visual Reasoning](https://arxiv.org/abs/2610.02181)
+2. [KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards](https://arxiv.org/abs/2610.02206)
+3. [Mimir: Physics-Grounded LLM Agents for Long-Horizon Irrigation Control](https://arxiv.org/abs/2610.02038)
+4. [From Knowledge Access to Source Learning: Developing Source-Specific Competence](https://arxiv.org/abs/2610.02150)
+5. [TRACE: Tackling Real-World Resource Assignment Problems via Agentic Heuristic Design](https://arxiv.org/abs/2610.01887)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-01.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-01.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-02.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-02.id.md)
 
-**Stats:** 1 digests · 10 papers archived · last updated 2026-10-01
+**Stats:** 2 digests · 20 papers archived · last updated 2026-10-02
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
