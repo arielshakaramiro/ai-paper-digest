@@ -164,12 +164,16 @@ def fetch_papers(categories: list[str], limit: int) -> list[dict]:
         "sortOrder": "descending",
         "max_results": limit,
     })
-    return parse_feed(http_request(f"{ARXIV_API}?{params}"))
+        return parse_feed(
+        http_request(f"{ARXIV_API}?{params}", timeout=120, retries=4)
+    )
 
 
 def fetch_by_ids(ids: list[str]) -> list[dict]:
     params = urllib.parse.urlencode({"id_list": ",".join(ids), "max_results": len(ids)})
-    return parse_feed(http_request(f"{ARXIV_API}?{params}"))
+        return parse_feed(
+        http_request(f"{ARXIV_API}?{params}", timeout=120, retries=4)
+    )
 
 
 # --------------------------------------------------------------------------- #
