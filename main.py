@@ -52,8 +52,7 @@ README_END = "<!-- LATEST_DIGEST_END -->"
 SEEN_LIMIT = 5000
 CSV_FIELDS = ["date", "arxiv_id", "title", "authors", "categories", "published", "score", "url"]
 
-# Output languages. The first entry in config "languages" is the primary digest
-# (YYYY-MM-DD.md); every other language gets YYYY-MM-DD.<suffix>.md.
+# The first configured language is the primary digest.
 LANGS = {
     "en": {
         "name": "English",
@@ -92,11 +91,17 @@ LANGS = {
 
 def configured_languages() -> list[str]:
     langs = CONFIG.get("languages")
-    if not langs:  # backward compatible with the old single "language" setting
-        langs = ["id" if CONFIG.get("language", "").lower().startswith(("indo", "bahasa")) else "en"]
+    if not langs:
+        langs = [
+            "id"
+            if CONFIG.get("language", "").lower().startswith(("indo", "bahasa"))
+            else "en"
+        ]
     unknown = [code for code in langs if code not in LANGS]
     if unknown:
-        raise SystemExit(f"Unknown language code(s) in config: {unknown}. Supported: {list(LANGS)}")
+        raise SystemExit(
+            f"Unknown language code(s) in config: {unknown}. Supported: {list(LANGS)}"
+        )
     return langs
 
 
@@ -108,8 +113,13 @@ def digest_path_for(date_str: str, lang: str) -> Path:
 # --------------------------------------------------------------------------- #
 # HTTP helpers
 # --------------------------------------------------------------------------- #
-def http_request(url: str, data: bytes | None = None, headers: dict | None = None,
-                 timeout: int = 60, retries: int = 3) -> str:
+def http_request(
+    url: str,
+    data: bytes | None = None,
+    headers: dict | None = None,
+    timeout: int = 60,
+    retries: int = 3,
+) -> str:
     headers = {"User-Agent": USER_AGENT, **(headers or {})}
     last_err: Exception | None = None
     for attempt in range(1, retries + 1):
@@ -118,7 +128,7 @@ def http_request(url: str, data: bytes | None = None, headers: dict | None = Non
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 return resp.read().decode("utf-8")
         except urllib.error.HTTPError as e:
-            # 4xx (except 429) will not fix itself on retry
+            # 4xx (except 429) will not fix itself on retry.
             if 400 <= e.code < 500 and e.code != 429:
                 body = e.read().decode("utf-8", "replace")[:300]
                 raise RuntimeError(f"HTTP {e.code}: {body}") from e
@@ -148,8 +158,14 @@ def parse_feed(xml_text: str) -> list[dict]:
             "id": base_id,
             "title": clean(entry.findtext(f"{ATOM}title", "")),
             "abstract": clean(entry.findtext(f"{ATOM}summary", "")),
-            "authors": [clean(a.findtext(f"{ATOM}name", "")) for a in entry.findall(f"{ATOM}author")],
-            "categories": [c.get("term", "") for c in entry.findall(f"{ATOM}category")],
+            "authors": [
+                clean(a.findtext(f"{ATOM}name", ""))
+                for a in entry.findall(f"{ATOM}author")
+            ],
+            "categories": [
+                c.get("term", "")
+                for c in entry.findall(f"{ATOM}category")
+            ],
             "published": entry.findtext(f"{ATOM}published", "")[:10],
             "url": f"https://arxiv.org/abs/{base_id}",
         })
@@ -164,14 +180,17 @@ def fetch_papers(categories: list[str], limit: int) -> list[dict]:
         "sortOrder": "descending",
         "max_results": limit,
     })
-        return parse_feed(
+    return parse_feed(
         http_request(f"{ARXIV_API}?{params}", timeout=120, retries=4)
     )
 
 
 def fetch_by_ids(ids: list[str]) -> list[dict]:
-    params = urllib.parse.urlencode({"id_list": ",".join(ids), "max_results": len(ids)})
-        return parse_feed(
+    params = urllib.parse.urlencode({
+        "id_list": ",".join(ids),
+        "max_results": len(ids),
+    })
+    return parse_feed(
         http_request(f"{ARXIV_API}?{params}", timeout=120, retries=4)
     )
 
@@ -180,7 +199,7 @@ def fetch_by_ids(ids: list[str]) -> list[dict]:
 # Ranking
 # --------------------------------------------------------------------------- #
 def score_paper(paper: dict, keywords: dict[str, int]) -> int:
-    text = f"{paper['title']} {paper['title']} {paper['abstract']}".lower()  # title counts double
+    text = f"{paper['title']} {paper['title']} {paper['abstract']}".lower()
     score = 0
     for kw, weight in keywords.items():
         if re.search(rf"\b{re.escape(kw.lower())}\b", text):
@@ -202,8 +221,10 @@ def llm_summarize(paper: dict, lang: str) -> str | None:
     meta = LANGS[lang]
     extra = ""
     if lang == "id":
-        extra = ("Write natural, formal-but-friendly Indonesian. Keep established technical terms "
-                 "in English (e.g. fine-tuning, benchmark, retrieval, agent, LLM).\n")
+        extra = (
+            "Write natural, formal-but-friendly Indonesian. Keep established technical terms "
+            "in English (e.g. fine-tuning, benchmark, retrieval, agent, LLM).\n"
+        )
     prompt = (
         f"Summarize this research paper for busy AI engineers. Write the answer in {meta['name']}.\n"
         f"{extra}"
@@ -225,7 +246,10 @@ def llm_summarize(paper: dict, lang: str) -> str | None:
         raw = http_request(
             f"{LLM_BASE_URL}/chat/completions",
             data=json.dumps(body).encode("utf-8"),
-            headers={"Authorization": f"Bearer {LLM_API_KEY}", "Content-Type": "application/json"},
+            headers={
+                "Authorization": f"Bearer {LLM_API_KEY}",
+                "Content-Type": "application/json",
+            },
             timeout=90,
         )
         return json.loads(raw)["choices"][0]["message"]["content"].strip()
@@ -238,12 +262,12 @@ def llm_summarize(paper: dict, lang: str) -> str | None:
             payload.pop("reasoning_effort")
             try:
                 return call(payload) or None
-            except Exception as e2:  # noqa: BLE001
+            except Exception as e2:
                 print(f"  ! LLM failed for {paper['id']}: {e2}", file=sys.stderr)
                 return None
         print(f"  ! LLM failed for {paper['id']}: {e}", file=sys.stderr)
         return None
-    except Exception as e:  # noqa: BLE001
+    except Exception as e:
         print(f"  ! LLM failed for {paper['id']}: {e}", file=sys.stderr)
         return None
 
@@ -272,7 +296,10 @@ def load_seen() -> list[str]:
 
 
 def save_seen(seen: list[str]) -> None:
-    SEEN_FILE.write_text(json.dumps(seen[-SEEN_LIMIT:], indent=0) + "\n", encoding="utf-8")
+    SEEN_FILE.write_text(
+        json.dumps(seen[-SEEN_LIMIT:], indent=0) + "\n",
+        encoding="utf-8",
+    )
 
 
 def append_csv(rows: list[dict]) -> int:
@@ -293,13 +320,17 @@ def format_authors(authors: list[str], more: str = "more", limit: int = 4) -> st
 
 
 def format_summary(text: str) -> str:
-    # Trim each line and keep line breaks when the Markdown is rendered.
     lines = [ln.strip() for ln in text.strip().splitlines() if ln.strip()]
     return "  \n".join(lines)
 
 
-def write_digest(date_str: str, picks: list[dict], total_fetched: int, lang: str,
-                 all_langs: list[str]) -> Path:
+def write_digest(
+    date_str: str,
+    picks: list[dict],
+    total_fetched: int,
+    lang: str,
+    all_langs: list[str],
+) -> Path:
     t = LANGS[lang]
     path = digest_path_for(date_str, lang)
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -313,7 +344,11 @@ def write_digest(date_str: str, picks: list[dict], total_fetched: int, lang: str
     if len(all_langs) > 1:
         lines += [switch, ""]
     lines += [
-        t["intro"].format(n=len(picks), total=total_fetched, cats=", ".join(CONFIG["categories"])),
+        t["intro"].format(
+            n=len(picks),
+            total=total_fetched,
+            cats=", ".join(CONFIG["categories"]),
+        ),
         "",
     ]
     for i, p in enumerate(picks, 1):
@@ -335,14 +370,18 @@ def write_digest(date_str: str, picks: list[dict], total_fetched: int, lang: str
     return path
 
 
-def update_readme(date_str: str, digest_paths: dict[str, Path], picks: list[dict],
-                  total_papers: int) -> None:
+def update_readme(
+    date_str: str,
+    digest_paths: dict[str, Path],
+    picks: list[dict],
+    total_papers: int,
+) -> None:
     if not README.exists():
         return
     text = README.read_text(encoding="utf-8")
     if README_START not in text or README_END not in text:
         return
-    # one digest per day, counted once regardless of how many languages it has
+
     digest_count = len({f.name.split(".")[0] for f in DIGEST_DIR.rglob("*.md")})
     preview = picks[: CONFIG.get("readme_preview", 5)]
     links = " · ".join(
@@ -360,13 +399,18 @@ def update_readme(date_str: str, digest_paths: dict[str, Path], picks: list[dict
         f"**Stats:** {digest_count} digests · {total_papers} papers archived · last updated {date_str}",
         README_END,
     ]
-    pattern = re.compile(re.escape(README_START) + r".*?" + re.escape(README_END), re.S)
-    README.write_text(pattern.sub(lambda _: "\n".join(block), text), encoding="utf-8")
+    pattern = re.compile(
+        re.escape(README_START) + r".*?" + re.escape(README_END),
+        re.S,
+    )
+    README.write_text(
+        pattern.sub(lambda _: "\n".join(block), text),
+        encoding="utf-8",
+    )
 
 
 def backfill_languages(date_str: str, langs: list[str]) -> int:
-    """Today's digest exists but some languages are missing (e.g. a language was
-    just added to config). Rebuild the missing ones from the same papers."""
+    """Rebuild missing languages using the papers in today's existing digest."""
     missing = [c for c in langs if not digest_path_for(date_str, c).exists()]
     if not missing:
         print(f"Digest for {date_str} already exists in all languages. Nothing to do.")
@@ -383,17 +427,19 @@ def backfill_languages(date_str: str, langs: list[str]) -> int:
     print(f"Backfilling {missing} for {date_str} ({len(rows)} papers)")
     fetched = {p["id"]: p for p in fetch_by_ids([r["arxiv_id"] for r in rows])}
     picks = []
-    for r in rows:  # keep the original ranking order
+    for r in rows:
         p = fetched.get(r["arxiv_id"])
         if p:
             p["score"] = int(r["score"])
             picks.append(p)
 
-    # "new papers" count from the existing primary digest intro, if available
     total_new = len(picks)
     primary = digest_path_for(date_str, langs[0])
     if primary.exists():
-        m = re.search(r"(\d+) (?:new papers|paper baru)", primary.read_text(encoding="utf-8"))
+        m = re.search(
+            r"(\d+) (?:new papers|paper baru)",
+            primary.read_text(encoding="utf-8"),
+        )
         if m:
             total_new = int(m.group(1))
 
@@ -401,7 +447,7 @@ def backfill_languages(date_str: str, langs: list[str]) -> int:
     for c in missing:
         print(f"Wrote {write_digest(date_str, picks, total_new, c, langs).relative_to(ROOT)}")
 
-    # Rewrite every other language's file only to refresh the language switcher links.
+    # Refresh language switcher links in the existing digests.
     for c in langs:
         if c in missing:
             continue
@@ -419,7 +465,12 @@ def backfill_languages(date_str: str, langs: list[str]) -> int:
 
     with CSV_FILE.open(encoding="utf-8") as f:
         total = sum(1 for _ in f) - 1
-    update_readme(date_str, {c: digest_path_for(date_str, c) for c in langs}, picks, total)
+    update_readme(
+        date_str,
+        {c: digest_path_for(date_str, c) for c in langs},
+        picks,
+        total,
+    )
     return 0
 
 
@@ -453,7 +504,10 @@ def main() -> int:
 
     summarize_all(picks, langs)
 
-    digest_paths = {lang: write_digest(date_str, picks, len(fresh), lang, langs) for lang in langs}
+    digest_paths = {
+        lang: write_digest(date_str, picks, len(fresh), lang, langs)
+        for lang in langs
+    }
     total = append_csv([{
         "date": date_str,
         "arxiv_id": p["id"],
