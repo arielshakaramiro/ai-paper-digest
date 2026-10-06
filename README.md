@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-10-02
+### 📅 2026-10-06
 
-1. [OmniSeek: Native Tool Integration for Multi-turn Audio-Visual Reasoning](https://arxiv.org/abs/2610.02181)
-2. [KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards](https://arxiv.org/abs/2610.02206)
-3. [Mimir: Physics-Grounded LLM Agents for Long-Horizon Irrigation Control](https://arxiv.org/abs/2610.02038)
-4. [From Knowledge Access to Source Learning: Developing Source-Specific Competence](https://arxiv.org/abs/2610.02150)
-5. [TRACE: Tackling Real-World Resource Assignment Problems via Agentic Heuristic Design](https://arxiv.org/abs/2610.01887)
+1. [AgentDoxx: Agentic Re-identification of Anonymized Text with Web Search](https://arxiv.org/abs/2610.05586)
+2. [Have I Scene This Before? Spatially Grounded Conversational Memory for Complex Queries in Egocentric Assistants](https://arxiv.org/abs/2610.05526)
+3. [Measurement-First Auditing of Agentic Leaderboards: Contamination Susceptibility, Matched-Control Re-evaluation, and Scorer Validation](https://arxiv.org/abs/2610.05830)
+4. [Agentic-ZTA: A Multi-Agent Architecture for Autonomous Zero Trust Enforcement](https://arxiv.org/abs/2610.05782)
+5. [SEA-LM: Egocentric Spatial Audio Understanding for Wearable Microphone Arrays](https://arxiv.org/abs/2610.05610)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-02.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-02.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-06.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-06.id.md)
 
-**Stats:** 2 digests · 20 papers archived · last updated 2026-10-02
+**Stats:** 3 digests · 30 papers archived · last updated 2026-10-06
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
