@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-10-06
+### 📅 2026-10-07
 
-1. [AgentDoxx: Agentic Re-identification of Anonymized Text with Web Search](https://arxiv.org/abs/2610.05586)
-2. [Have I Scene This Before? Spatially Grounded Conversational Memory for Complex Queries in Egocentric Assistants](https://arxiv.org/abs/2610.05526)
-3. [Measurement-First Auditing of Agentic Leaderboards: Contamination Susceptibility, Matched-Control Re-evaluation, and Scorer Validation](https://arxiv.org/abs/2610.05830)
-4. [Agentic-ZTA: A Multi-Agent Architecture for Autonomous Zero Trust Enforcement](https://arxiv.org/abs/2610.05782)
-5. [SEA-LM: Egocentric Spatial Audio Understanding for Wearable Microphone Arrays](https://arxiv.org/abs/2610.05610)
+1. [Agentic AutoRAG: RAG Pipeline Optimization through Reasoning-Driven Agents](https://arxiv.org/abs/2610.08452)
+2. [WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?](https://arxiv.org/abs/2610.08720)
+3. [Transect: Retaining Observability for Long-Horizon LLM Agent Evaluations](https://arxiv.org/abs/2610.08364)
+4. [VeriFine: Scaling Verification for Self-Improvement in Embodied Reasoning](https://arxiv.org/abs/2610.08761)
+5. [ParanoiaEval: Benchmarking Unnecessary Defensive Work in Agentic Coding](https://arxiv.org/abs/2610.08662)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-06.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-06.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-07.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-07.id.md)
 
-**Stats:** 3 digests · 30 papers archived · last updated 2026-10-06
+**Stats:** 4 digests · 40 papers archived · last updated 2026-10-07
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
