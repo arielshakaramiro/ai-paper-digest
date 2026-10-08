@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-10-07
+### 📅 2026-10-08
 
-1. [Agentic AutoRAG: RAG Pipeline Optimization through Reasoning-Driven Agents](https://arxiv.org/abs/2610.08452)
-2. [WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?](https://arxiv.org/abs/2610.08720)
-3. [Transect: Retaining Observability for Long-Horizon LLM Agent Evaluations](https://arxiv.org/abs/2610.08364)
-4. [VeriFine: Scaling Verification for Self-Improvement in Embodied Reasoning](https://arxiv.org/abs/2610.08761)
-5. [ParanoiaEval: Benchmarking Unnecessary Defensive Work in Agentic Coding](https://arxiv.org/abs/2610.08662)
+1. [RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing](https://arxiv.org/abs/2610.10507)
+2. [QuSema: Detecting Silent Bugs in Quantum Libraries via Quantum-knowledge-enhanced Agents](https://arxiv.org/abs/2610.10258)
+3. [PHRBench: A Behavioral Evaluation of Post-Hallucination Reasoning in LLMs](https://arxiv.org/abs/2610.10455)
+4. [SOTA: Stock Options Trading Agents Guided by Option-Implied Return Distributions](https://arxiv.org/abs/2610.10407)
+5. [RSIGym: A Flexible Environment for Recursive Self-Improvement](https://arxiv.org/abs/2610.10310)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-07.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-07.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-08.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-08.id.md)
 
-**Stats:** 4 digests · 40 papers archived · last updated 2026-10-07
+**Stats:** 5 digests · 50 papers archived · last updated 2026-10-08
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
