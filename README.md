@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-10-08
+### 📅 2026-10-09
 
-1. [RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing](https://arxiv.org/abs/2610.10507)
-2. [QuSema: Detecting Silent Bugs in Quantum Libraries via Quantum-knowledge-enhanced Agents](https://arxiv.org/abs/2610.10258)
-3. [PHRBench: A Behavioral Evaluation of Post-Hallucination Reasoning in LLMs](https://arxiv.org/abs/2610.10455)
-4. [SOTA: Stock Options Trading Agents Guided by Option-Implied Return Distributions](https://arxiv.org/abs/2610.10407)
-5. [RSIGym: A Flexible Environment for Recursive Self-Improvement](https://arxiv.org/abs/2610.10310)
+1. [A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization](https://arxiv.org/abs/2610.12183)
+2. [SuperNav: An Agentic Navigation System for Any Task in Any Scene](https://arxiv.org/abs/2610.12126)
+3. [Reasoning-Informed Visual Editing](https://arxiv.org/abs/2610.12343)
+4. [Is In-Domain Training Enough for Fine-Grained Industrial Anomaly Understanding?](https://arxiv.org/abs/2610.12310)
+5. [DataSense-Bench: The First Step Toward an AI Scientist](https://arxiv.org/abs/2610.12190)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-08.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-08.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-09.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-09.id.md)
 
-**Stats:** 5 digests · 50 papers archived · last updated 2026-10-08
+**Stats:** 6 digests · 60 papers archived · last updated 2026-10-09
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
