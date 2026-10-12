@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-10-09
+### 📅 2026-10-12
 
-1. [A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization](https://arxiv.org/abs/2610.12183)
-2. [SuperNav: An Agentic Navigation System for Any Task in Any Scene](https://arxiv.org/abs/2610.12126)
-3. [Reasoning-Informed Visual Editing](https://arxiv.org/abs/2610.12343)
-4. [Is In-Domain Training Enough for Fine-Grained Industrial Anomaly Understanding?](https://arxiv.org/abs/2610.12310)
-5. [DataSense-Bench: The First Step Toward an AI Scientist](https://arxiv.org/abs/2610.12190)
+1. [RATED: Reliability-Aware AI Agent Tool Retrieval via Execution Dynamics](https://arxiv.org/abs/2610.13889)
+2. [A Baseline Assessment for the Agentic Web Technology Stack](https://arxiv.org/abs/2610.13703)
+3. [Verifiable Retrieval for Legal Reasoning through Structure-driven Knowledge Graph](https://arxiv.org/abs/2610.13695)
+4. [Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark](https://arxiv.org/abs/2610.13947)
+5. [OccludeBench: Can VLMs Find What's Missing?](https://arxiv.org/abs/2610.13790)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-09.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-09.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-12.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-12.id.md)
 
-**Stats:** 6 digests · 60 papers archived · last updated 2026-10-09
+**Stats:** 7 digests · 70 papers archived · last updated 2026-10-12
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
