@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-10-12
+### 📅 2026-10-14
 
-1. [RATED: Reliability-Aware AI Agent Tool Retrieval via Execution Dynamics](https://arxiv.org/abs/2610.13889)
-2. [A Baseline Assessment for the Agentic Web Technology Stack](https://arxiv.org/abs/2610.13703)
-3. [Verifiable Retrieval for Legal Reasoning through Structure-driven Knowledge Graph](https://arxiv.org/abs/2610.13695)
-4. [Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark](https://arxiv.org/abs/2610.13947)
-5. [OccludeBench: Can VLMs Find What's Missing?](https://arxiv.org/abs/2610.13790)
+1. [SEAR: Self-Evolving Agentic Robotics](https://arxiv.org/abs/2610.18792)
+2. [ChunkAct: Action Chunking for Agentic Robotics](https://arxiv.org/abs/2610.18874)
+3. [Legal-R1: Agentic Retrieval for Evidence-Based Legal Reasoning](https://arxiv.org/abs/2610.18611)
+4. [Hybrid Reasoning Agents](https://arxiv.org/abs/2610.18861)
+5. [BLADE: Auditing Information Use for Failure Attribution in LLM Multi-Agent Systems](https://arxiv.org/abs/2610.18780)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-12.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-12.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-14.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-14.id.md)
 
-**Stats:** 7 digests · 70 papers archived · last updated 2026-10-12
+**Stats:** 8 digests · 80 papers archived · last updated 2026-10-14
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
