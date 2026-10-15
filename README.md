@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-10-14
+### 📅 2026-10-15
 
-1. [SEAR: Self-Evolving Agentic Robotics](https://arxiv.org/abs/2610.18792)
-2. [ChunkAct: Action Chunking for Agentic Robotics](https://arxiv.org/abs/2610.18874)
-3. [Legal-R1: Agentic Retrieval for Evidence-Based Legal Reasoning](https://arxiv.org/abs/2610.18611)
-4. [Hybrid Reasoning Agents](https://arxiv.org/abs/2610.18861)
-5. [BLADE: Auditing Information Use for Failure Attribution in LLM Multi-Agent Systems](https://arxiv.org/abs/2610.18780)
+1. [P2Patch: Exploit-Guided Vulnerability Repair](https://arxiv.org/abs/2610.20245)
+2. [Same Claim, Different Interpretations: How LLM Agents Resolve Ambiguity in Scientific Claims](https://arxiv.org/abs/2610.20457)
+3. [PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition](https://arxiv.org/abs/2610.20560)
+4. [HEM-Med: A Hierarchical Agentic Memory Framework for Safe Multi-Center Medication Recommendation](https://arxiv.org/abs/2610.20191)
+5. [One Task, Many Interfaces: Simple Cross-Interface Consistency Training Improves LLM Agent Robustness](https://arxiv.org/abs/2610.20576)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-14.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-14.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-15.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-15.id.md)
 
-**Stats:** 8 digests · 80 papers archived · last updated 2026-10-14
+**Stats:** 9 digests · 90 papers archived · last updated 2026-10-15
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
