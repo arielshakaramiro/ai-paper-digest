@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-10-15
+### 📅 2026-10-16
 
-1. [P2Patch: Exploit-Guided Vulnerability Repair](https://arxiv.org/abs/2610.20245)
-2. [Same Claim, Different Interpretations: How LLM Agents Resolve Ambiguity in Scientific Claims](https://arxiv.org/abs/2610.20457)
-3. [PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition](https://arxiv.org/abs/2610.20560)
-4. [HEM-Med: A Hierarchical Agentic Memory Framework for Safe Multi-Center Medication Recommendation](https://arxiv.org/abs/2610.20191)
-5. [One Task, Many Interfaces: Simple Cross-Interface Consistency Training Improves LLM Agent Robustness](https://arxiv.org/abs/2610.20576)
+1. [Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries](https://arxiv.org/abs/2610.22273)
+2. [PROBE: Learning to Audit Policy Compliance in Tool-Using LLM Agents](https://arxiv.org/abs/2610.22124)
+3. [Learning to Steer LLM Agents and Multi-Agent Systems](https://arxiv.org/abs/2610.22316)
+4. [Training Reasoning Models to Generate Diverse Scientific Ideas](https://arxiv.org/abs/2610.22324)
+5. [CAT-alyzing Honesty: Continuous Adversarial Training for Transferable LLM Honesty](https://arxiv.org/abs/2610.22292)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-15.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-15.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-16.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-16.id.md)
 
-**Stats:** 9 digests · 90 papers archived · last updated 2026-10-15
+**Stats:** 10 digests · 100 papers archived · last updated 2026-10-16
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
