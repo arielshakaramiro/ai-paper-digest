@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-10-16
+### 📅 2026-10-19
 
-1. [Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries](https://arxiv.org/abs/2610.22273)
-2. [PROBE: Learning to Audit Policy Compliance in Tool-Using LLM Agents](https://arxiv.org/abs/2610.22124)
-3. [Learning to Steer LLM Agents and Multi-Agent Systems](https://arxiv.org/abs/2610.22316)
-4. [Training Reasoning Models to Generate Diverse Scientific Ideas](https://arxiv.org/abs/2610.22324)
-5. [CAT-alyzing Honesty: Continuous Adversarial Training for Transferable LLM Honesty](https://arxiv.org/abs/2610.22292)
+1. [SkillBrowser: Selective Skill Exposure for Scalable Skill-Using Agents](https://arxiv.org/abs/2610.23554)
+2. [From Trajectories to Differentiated Skills: Cognitive Differentiation for Self-Improving Agents](https://arxiv.org/abs/2610.23599)
+3. [Darwin-Claw: Environment-Adaptive Experience Consolidation for Recursively Self-Evolving Agents](https://arxiv.org/abs/2610.23574)
+4. [RL-Guided Temporal Localization for Dual-Channel Retrieval in Long-Horizon Agent Memory](https://arxiv.org/abs/2610.23598)
+5. [Enhancing RAG-based Medical VQA with Gated Multimodal Representations](https://arxiv.org/abs/2610.23588)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-16.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-16.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-19.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-19.id.md)
 
-**Stats:** 10 digests · 100 papers archived · last updated 2026-10-16
+**Stats:** 11 digests · 110 papers archived · last updated 2026-10-19
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
