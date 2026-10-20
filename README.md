@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-10-19
+### 📅 2026-10-20
 
-1. [SkillBrowser: Selective Skill Exposure for Scalable Skill-Using Agents](https://arxiv.org/abs/2610.23554)
-2. [From Trajectories to Differentiated Skills: Cognitive Differentiation for Self-Improving Agents](https://arxiv.org/abs/2610.23599)
-3. [Darwin-Claw: Environment-Adaptive Experience Consolidation for Recursively Self-Evolving Agents](https://arxiv.org/abs/2610.23574)
-4. [RL-Guided Temporal Localization for Dual-Channel Retrieval in Long-Horizon Agent Memory](https://arxiv.org/abs/2610.23598)
-5. [Enhancing RAG-based Medical VQA with Gated Multimodal Representations](https://arxiv.org/abs/2610.23588)
+1. [Agentic Orchestration of EDC Data Space Retrieval and Natural Language Driven Data Processing](https://arxiv.org/abs/2610.26548)
+2. [RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development](https://arxiv.org/abs/2610.26826)
+3. [SPAR: Structural Pruning and Action Recovery for Vision-Language-Action Models](https://arxiv.org/abs/2610.26487)
+4. [OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory](https://arxiv.org/abs/2610.26860)
+5. [Train An Imaginative Agent](https://arxiv.org/abs/2610.26845)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-19.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-19.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-20.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-20.id.md)
 
-**Stats:** 11 digests · 110 papers archived · last updated 2026-10-19
+**Stats:** 12 digests · 120 papers archived · last updated 2026-10-20
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
