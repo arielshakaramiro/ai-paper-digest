@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-10-20
+### 📅 2026-10-21
 
-1. [Agentic Orchestration of EDC Data Space Retrieval and Natural Language Driven Data Processing](https://arxiv.org/abs/2610.26548)
-2. [RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development](https://arxiv.org/abs/2610.26826)
-3. [SPAR: Structural Pruning and Action Recovery for Vision-Language-Action Models](https://arxiv.org/abs/2610.26487)
-4. [OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory](https://arxiv.org/abs/2610.26860)
-5. [Train An Imaginative Agent](https://arxiv.org/abs/2610.26845)
+1. [Semantic Observability for Autonomous Systems Diagnostics](https://arxiv.org/abs/2610.28611)
+2. [Capable Teacher, Myopic Scorer: Reward-Free Teacher Repair for Agentic On-Policy Distillation](https://arxiv.org/abs/2610.28586)
+3. [Auto-Director: Leveraging Multi-Agent Collaboration for Autonomous Video Editing](https://arxiv.org/abs/2610.28346)
+4. [Context-Aware Prompt Injection Detection via Small Language Models in RAG Pipelines: nokast-secureRAG](https://arxiv.org/abs/2610.28364)
+5. [MAS-Guard: Unified Guardrails from Individual Agents to Multi-Agent LLM Systems](https://arxiv.org/abs/2610.28397)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-20.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-20.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-21.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-21.id.md)
 
-**Stats:** 12 digests · 120 papers archived · last updated 2026-10-20
+**Stats:** 13 digests · 130 papers archived · last updated 2026-10-21
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
