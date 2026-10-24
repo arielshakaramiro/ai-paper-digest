@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-10-22
+### 📅 2026-10-24
 
-1. [Charts as Epistemic Actions for Experience-Driven Agentic Data Analysis](https://arxiv.org/abs/2610.30072)
-2. [From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Manipulation Tasks](https://arxiv.org/abs/2610.30051)
-3. [ToM2Vec: Continuous Theory-of-Mind Tokens for Multi-Agent Coordination](https://arxiv.org/abs/2610.29934)
-4. [Real PMIDs, Wrong Papers: Harness Design for Biomedical Claim-Verification Agents](https://arxiv.org/abs/2610.29812)
-5. [Retrieval Augmented Generation Compositionality](https://arxiv.org/abs/2610.29722)
+1. [IndoNutriQA: An Indonesian Clinical Nutrition Question Answering Benchmark](https://arxiv.org/abs/2610.31256)
+2. [Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action](https://arxiv.org/abs/2610.31376)
+3. [AgentVQA: A Unified Benchmark for Agentic Visual Understanding](https://arxiv.org/abs/2610.31494)
+4. [Muffin - A Shared Memory Buffer for Asynchronous AI Agents](https://arxiv.org/abs/2610.31355)
+5. [How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions](https://arxiv.org/abs/2610.31606)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-22.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-22.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-24.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-24.id.md)
 
-**Stats:** 14 digests · 140 papers archived · last updated 2026-10-22
+**Stats:** 15 digests · 150 papers archived · last updated 2026-10-24
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
