@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-10-24
+### 📅 2026-10-27
 
-1. [IndoNutriQA: An Indonesian Clinical Nutrition Question Answering Benchmark](https://arxiv.org/abs/2610.31256)
-2. [Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action](https://arxiv.org/abs/2610.31376)
-3. [AgentVQA: A Unified Benchmark for Agentic Visual Understanding](https://arxiv.org/abs/2610.31494)
-4. [Muffin - A Shared Memory Buffer for Asynchronous AI Agents](https://arxiv.org/abs/2610.31355)
-5. [How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions](https://arxiv.org/abs/2610.31606)
+1. [When Fine-Grained Credit Assignment Helps and Hurts: Multimodal Agentic Reinforcement Learning through Video Editing](https://arxiv.org/abs/2610.35497)
+2. [Reva: Real-Time Vulnerability Detection through Contextual Probing of Large Language Models](https://arxiv.org/abs/2610.35829)
+3. [Pretraining Knows What, Simulation Teaches How: Compositional Generalization in a Sim-Trained Robot Agent](https://arxiv.org/abs/2610.35817)
+4. [Evolve on Graph: Self-Evolving Knowledge Graph Reasoning without Question Annotations](https://arxiv.org/abs/2610.35598)
+5. [Agentic Algorithm Design: LLMs that Propose, Formalise, and Prove Runtime Bounds for Evolutionary Algorithms in Lean](https://arxiv.org/abs/2610.35595)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-24.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-24.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-27.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-27.id.md)
 
-**Stats:** 15 digests · 150 papers archived · last updated 2026-10-24
+**Stats:** 16 digests · 160 papers archived · last updated 2026-10-27
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
