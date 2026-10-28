@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-10-27
+### 📅 2026-10-28
 
-1. [When Fine-Grained Credit Assignment Helps and Hurts: Multimodal Agentic Reinforcement Learning through Video Editing](https://arxiv.org/abs/2610.35497)
-2. [Reva: Real-Time Vulnerability Detection through Contextual Probing of Large Language Models](https://arxiv.org/abs/2610.35829)
-3. [Pretraining Knows What, Simulation Teaches How: Compositional Generalization in a Sim-Trained Robot Agent](https://arxiv.org/abs/2610.35817)
-4. [Evolve on Graph: Self-Evolving Knowledge Graph Reasoning without Question Annotations](https://arxiv.org/abs/2610.35598)
-5. [Agentic Algorithm Design: LLMs that Propose, Formalise, and Prove Runtime Bounds for Evolutionary Algorithms in Lean](https://arxiv.org/abs/2610.35595)
+1. [Constraining the Commit Boundary: A DIO/ODI-Informed Authorization Guardrail for Agentic Entity Resolution](https://arxiv.org/abs/2610.37407)
+2. [Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents](https://arxiv.org/abs/2610.37567)
+3. [PerceptRL: Making Visual Perception Rewardable in MLLMs from Answers to Interactions](https://arxiv.org/abs/2610.37471)
+4. [Zhengrong-Spatial-Aware 1.0: Advancing 3D Multimodal Intelligence](https://arxiv.org/abs/2610.37216)
+5. [Grounding LLM Agents in Business Processes: Process-Aware Knowledge Graphs for Reliable Multi-Step Service Invocation](https://arxiv.org/abs/2610.37242)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-27.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-27.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-28.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-28.id.md)
 
-**Stats:** 16 digests · 160 papers archived · last updated 2026-10-27
+**Stats:** 17 digests · 170 papers archived · last updated 2026-10-28
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
