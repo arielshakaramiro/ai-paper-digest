@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-10-28
+### 📅 2026-10-30
 
-1. [Constraining the Commit Boundary: A DIO/ODI-Informed Authorization Guardrail for Agentic Entity Resolution](https://arxiv.org/abs/2610.37407)
-2. [Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents](https://arxiv.org/abs/2610.37567)
-3. [PerceptRL: Making Visual Perception Rewardable in MLLMs from Answers to Interactions](https://arxiv.org/abs/2610.37471)
-4. [Zhengrong-Spatial-Aware 1.0: Advancing 3D Multimodal Intelligence](https://arxiv.org/abs/2610.37216)
-5. [Grounding LLM Agents in Business Processes: Process-Aware Knowledge Graphs for Reliable Multi-Step Service Invocation](https://arxiv.org/abs/2610.37242)
+1. [Agentic LLM reasoning in pediatric diabetes outcome prediction from multimodal medical records](https://arxiv.org/abs/2610.40379)
+2. [Don't Lose the Thread: Empowering Long-Horizon LLM Agents with Cognitive Resource Self-Allocation](https://arxiv.org/abs/2610.40350)
+3. [The Athlete as a Scientist of One: Agentic Bayesian Experimental Design for Individualized Physiology from Consumer Wearables](https://arxiv.org/abs/2610.40370)
+4. [Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement](https://arxiv.org/abs/2610.40191)
+5. [Locating and Closing Information Gaps in Multi-Agent Systems](https://arxiv.org/abs/2610.40186)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-28.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-28.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/10/2026-10-30.md) · 🇮🇩 [Baca digest lengkap](digests/2026/10/2026-10-30.id.md)
 
-**Stats:** 17 digests · 170 papers archived · last updated 2026-10-28
+**Stats:** 18 digests · 180 papers archived · last updated 2026-10-30
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
