@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-11-02
+### 📅 2026-11-03
 
-1. [How Much Can Tool Calls Reveal About You? Privacy Leakage from Tool-Call Traces](https://arxiv.org/abs/2610.41885)
-2. [Flide: Accelerating Decision Inference with Exact State Forking](https://arxiv.org/abs/2610.42148)
-3. [Subquadratic Attention with a Hierarchical Tree-Structured Indexer](https://arxiv.org/abs/2610.42112)
-4. [REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control](https://arxiv.org/abs/2610.42053)
-5. [TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents](https://arxiv.org/abs/2610.42004)
+1. [An Agentic Framework for Automated Power System Studies and Grid Connection Assessment](https://arxiv.org/abs/2611.03534)
+2. [Axion 1.0: Open Agent Foundation Models, Simplified](https://arxiv.org/abs/2611.03233)
+3. [DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems?](https://arxiv.org/abs/2611.03523)
+4. [Same Outputs, Different Scores: Auditing the Unchecked Graders of Multimodal LLM Benchmarks](https://arxiv.org/abs/2611.03377)
+5. [DiabAgent: Toward Agentic Physiological Control](https://arxiv.org/abs/2611.03601)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-02.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-02.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-03.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-03.id.md)
 
-**Stats:** 19 digests · 190 papers archived · last updated 2026-11-02
+**Stats:** 20 digests · 200 papers archived · last updated 2026-11-03
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
