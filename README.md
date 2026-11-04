@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-11-03
+### 📅 2026-11-04
 
-1. [An Agentic Framework for Automated Power System Studies and Grid Connection Assessment](https://arxiv.org/abs/2611.03534)
-2. [Axion 1.0: Open Agent Foundation Models, Simplified](https://arxiv.org/abs/2611.03233)
-3. [DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems?](https://arxiv.org/abs/2611.03523)
-4. [Same Outputs, Different Scores: Auditing the Unchecked Graders of Multimodal LLM Benchmarks](https://arxiv.org/abs/2611.03377)
-5. [DiabAgent: Toward Agentic Physiological Control](https://arxiv.org/abs/2611.03601)
+1. [OperAItor: An Agentic Framework for Fault-Tolerant Operation of Chemical Processes](https://arxiv.org/abs/2611.05179)
+2. [Adversarial Speculative Reasoning Improves Long Horizon Agents](https://arxiv.org/abs/2611.05345)
+3. [HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation](https://arxiv.org/abs/2611.05319)
+4. [GeoFaham: Domain-Specialized Multi-Agent Geospatial Analytics for Disaster Response](https://arxiv.org/abs/2611.04977)
+5. [VIGOR: Visual Gain Ordering for Hallucination Mitigation in Multimodal Discrete Diffusion Language Models](https://arxiv.org/abs/2611.05066)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-03.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-03.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-04.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-04.id.md)
 
-**Stats:** 20 digests · 200 papers archived · last updated 2026-11-03
+**Stats:** 21 digests · 210 papers archived · last updated 2026-11-04
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
