@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-11-04
+### 📅 2026-11-05
 
-1. [OperAItor: An Agentic Framework for Fault-Tolerant Operation of Chemical Processes](https://arxiv.org/abs/2611.05179)
-2. [Adversarial Speculative Reasoning Improves Long Horizon Agents](https://arxiv.org/abs/2611.05345)
-3. [HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation](https://arxiv.org/abs/2611.05319)
-4. [GeoFaham: Domain-Specialized Multi-Agent Geospatial Analytics for Disaster Response](https://arxiv.org/abs/2611.04977)
-5. [VIGOR: Visual Gain Ordering for Hallucination Mitigation in Multimodal Discrete Diffusion Language Models](https://arxiv.org/abs/2611.05066)
+1. [ServerBench: How can your coding agents design specialized LLM serving systems?](https://arxiv.org/abs/2611.06841)
+2. [Task-Efficient Agent Evaluation Using Cached Traces](https://arxiv.org/abs/2611.06803)
+3. [RAGAM-AI: A Hybrid Reinforcement Learning based Agentic approach powered by Generative AI for Edge Resource Management](https://arxiv.org/abs/2611.06554)
+4. [ArcRAG: Agentic Compositional Retrieval over Knowledge Graphs](https://arxiv.org/abs/2611.06481)
+5. [On Turn-Level Best-of-N Sampling for Scaling LLM Agents](https://arxiv.org/abs/2611.06868)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-04.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-04.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-05.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-05.id.md)
 
-**Stats:** 21 digests · 210 papers archived · last updated 2026-11-04
+**Stats:** 22 digests · 220 papers archived · last updated 2026-11-05
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
