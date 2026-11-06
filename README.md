@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-11-05
+### 📅 2026-11-06
 
-1. [ServerBench: How can your coding agents design specialized LLM serving systems?](https://arxiv.org/abs/2611.06841)
-2. [Task-Efficient Agent Evaluation Using Cached Traces](https://arxiv.org/abs/2611.06803)
-3. [RAGAM-AI: A Hybrid Reinforcement Learning based Agentic approach powered by Generative AI for Edge Resource Management](https://arxiv.org/abs/2611.06554)
-4. [ArcRAG: Agentic Compositional Retrieval over Knowledge Graphs](https://arxiv.org/abs/2611.06481)
-5. [On Turn-Level Best-of-N Sampling for Scaling LLM Agents](https://arxiv.org/abs/2611.06868)
+1. [Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis](https://arxiv.org/abs/2611.08219)
+2. [Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling](https://arxiv.org/abs/2611.08237)
+3. [From Twisted Facts to Rogue Agents: Can LLMs Reliably Detect Multi-Dimensional Hallucinations?](https://arxiv.org/abs/2611.08231)
+4. [The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI](https://arxiv.org/abs/2611.08428)
+5. [RM-VLM: From Natural-Language Task Descriptions to Vision-Grounded Reward Machines](https://arxiv.org/abs/2611.08308)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-05.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-05.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-06.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-06.id.md)
 
-**Stats:** 22 digests · 220 papers archived · last updated 2026-11-05
+**Stats:** 23 digests · 230 papers archived · last updated 2026-11-06
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
