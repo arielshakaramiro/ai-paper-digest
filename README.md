@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-11-09
+### 📅 2026-11-10
 
-1. [Typed-Centrality Grounding for Agentic GraphRAG: A Symbolic Approach for Agentic Reasoning](https://arxiv.org/abs/2611.09414)
-2. [Agentic AI for Healthcare Claim Denial Analysis: A Policy-Grounded Framework for Privacy Preservation](https://arxiv.org/abs/2611.09423)
-3. [MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory](https://arxiv.org/abs/2611.09721)
-4. [ROAM: Retrieval-Augmented Optimization for Feasible Multi-Day Itinerary Planning](https://arxiv.org/abs/2611.09407)
-5. [On Agentic Manipulation Policies](https://arxiv.org/abs/2611.09892)
+1. [Mitigating Agentic Deception via Evaluation-Side Partially Observable Games](https://arxiv.org/abs/2611.12835)
+2. [TRIAD: Multimodal Retrieval across Abstraction, Constraints, and State](https://arxiv.org/abs/2611.12364)
+3. [Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning](https://arxiv.org/abs/2611.12886)
+4. [WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems](https://arxiv.org/abs/2611.12856)
+5. [Say Shibboleth: Fingerprinting the LLMs and Harnesses Behind Agentic Attacks](https://arxiv.org/abs/2611.12386)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-09.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-09.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-10.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-10.id.md)
 
-**Stats:** 24 digests · 240 papers archived · last updated 2026-11-09
+**Stats:** 25 digests · 250 papers archived · last updated 2026-11-10
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
