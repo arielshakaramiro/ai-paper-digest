@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-11-10
+### 📅 2026-11-11
 
-1. [Mitigating Agentic Deception via Evaluation-Side Partially Observable Games](https://arxiv.org/abs/2611.12835)
-2. [TRIAD: Multimodal Retrieval across Abstraction, Constraints, and State](https://arxiv.org/abs/2611.12364)
-3. [Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning](https://arxiv.org/abs/2611.12886)
-4. [WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems](https://arxiv.org/abs/2611.12856)
-5. [Say Shibboleth: Fingerprinting the LLMs and Harnesses Behind Agentic Attacks](https://arxiv.org/abs/2611.12386)
+1. [Chain of Physics: Supporting Fault Diagnosis with Engineering-Inspired Large Language Model Reasoning](https://arxiv.org/abs/2611.14263)
+2. [ProofCoder: Continuous Reasoning for Automated Software Verification](https://arxiv.org/abs/2611.14106)
+3. [ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows](https://arxiv.org/abs/2611.14492)
+4. [EngineAgent: Agentizing On-Device LLM Inference Engines with Inference Stack Hierarchy Awareness and Hardware Abilities](https://arxiv.org/abs/2611.14356)
+5. [Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning](https://arxiv.org/abs/2611.14419)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-10.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-10.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-11.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-11.id.md)
 
-**Stats:** 25 digests · 250 papers archived · last updated 2026-11-10
+**Stats:** 26 digests · 260 papers archived · last updated 2026-11-11
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
