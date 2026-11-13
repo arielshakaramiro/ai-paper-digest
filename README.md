@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-11-11
+### 📅 2026-11-13
 
-1. [Chain of Physics: Supporting Fault Diagnosis with Engineering-Inspired Large Language Model Reasoning](https://arxiv.org/abs/2611.14263)
-2. [ProofCoder: Continuous Reasoning for Automated Software Verification](https://arxiv.org/abs/2611.14106)
-3. [ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows](https://arxiv.org/abs/2611.14492)
-4. [EngineAgent: Agentizing On-Device LLM Inference Engines with Inference Stack Hierarchy Awareness and Hardware Abilities](https://arxiv.org/abs/2611.14356)
-5. [Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning](https://arxiv.org/abs/2611.14419)
+1. [Auditing AI peer reviewers: a benchmark on real scientific papers](https://arxiv.org/abs/2611.17052)
+2. [AnalogLayoutWorld: An Open Benchmark for Agentic Analog Layout Design](https://arxiv.org/abs/2611.16991)
+3. [Scalable Conversational Assessment: Chat-Based Exams with a Two-Agent LLM Pipeline](https://arxiv.org/abs/2611.17220)
+4. [Visual Cipher Bench: Benchmarking LLM Agents on Long-Horizon Visual Reasoning](https://arxiv.org/abs/2611.16861)
+5. [Scale-Induced Semantic Shift in Visual Prompt Injection Against VLMs and Web Agents](https://arxiv.org/abs/2611.16744)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-11.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-11.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-13.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-13.id.md)
 
-**Stats:** 26 digests · 260 papers archived · last updated 2026-11-11
+**Stats:** 27 digests · 270 papers archived · last updated 2026-11-13
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
