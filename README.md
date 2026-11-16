@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-11-13
+### 📅 2026-11-16
 
-1. [Auditing AI peer reviewers: a benchmark on real scientific papers](https://arxiv.org/abs/2611.17052)
-2. [AnalogLayoutWorld: An Open Benchmark for Agentic Analog Layout Design](https://arxiv.org/abs/2611.16991)
-3. [Scalable Conversational Assessment: Chat-Based Exams with a Two-Agent LLM Pipeline](https://arxiv.org/abs/2611.17220)
-4. [Visual Cipher Bench: Benchmarking LLM Agents on Long-Horizon Visual Reasoning](https://arxiv.org/abs/2611.16861)
-5. [Scale-Induced Semantic Shift in Visual Prompt Injection Against VLMs and Web Agents](https://arxiv.org/abs/2611.16744)
+1. [Agent-as-a-Judge](https://arxiv.org/abs/2611.18067)
+2. [Training Reasoning Models in Simulation to Natively Use Real Robots](https://arxiv.org/abs/2611.18562)
+3. [Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination](https://arxiv.org/abs/2611.18514)
+4. [Agentic induction of common data elements and information extraction from sarcoma case report abstracts](https://arxiv.org/abs/2611.18506)
+5. [VEPO: Mitigating Multilingual Hallucinations in LVLMs via Visual Evidence-guided Preference Optimization](https://arxiv.org/abs/2611.18096)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-13.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-13.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-16.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-16.id.md)
 
-**Stats:** 27 digests · 270 papers archived · last updated 2026-11-13
+**Stats:** 28 digests · 280 papers archived · last updated 2026-11-16
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
