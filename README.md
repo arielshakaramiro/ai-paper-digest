@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-11-16
+### 📅 2026-11-17
 
-1. [Agent-as-a-Judge](https://arxiv.org/abs/2611.18067)
-2. [Training Reasoning Models in Simulation to Natively Use Real Robots](https://arxiv.org/abs/2611.18562)
-3. [Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination](https://arxiv.org/abs/2611.18514)
-4. [Agentic induction of common data elements and information extraction from sarcoma case report abstracts](https://arxiv.org/abs/2611.18506)
-5. [VEPO: Mitigating Multilingual Hallucinations in LVLMs via Visual Evidence-guided Preference Optimization](https://arxiv.org/abs/2611.18096)
+1. [Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits](https://arxiv.org/abs/2611.21485)
+2. [Agent-Native by Design: A Programming Language for Agentic Applications](https://arxiv.org/abs/2611.21298)
+3. [WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection](https://arxiv.org/abs/2611.21373)
+4. [Turing Agent: Agentic Formal Verification for Mathematical Research](https://arxiv.org/abs/2611.21299)
+5. [SciResearch-Eval: Evaluating Scientific Judgment in Autonomous Experimental Agents](https://arxiv.org/abs/2611.21541)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-16.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-16.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-17.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-17.id.md)
 
-**Stats:** 28 digests · 280 papers archived · last updated 2026-11-16
+**Stats:** 29 digests · 290 papers archived · last updated 2026-11-17
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
