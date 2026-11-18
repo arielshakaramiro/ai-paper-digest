@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-11-17
+### 📅 2026-11-18
 
-1. [Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits](https://arxiv.org/abs/2611.21485)
-2. [Agent-Native by Design: A Programming Language for Agentic Applications](https://arxiv.org/abs/2611.21298)
-3. [WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection](https://arxiv.org/abs/2611.21373)
-4. [Turing Agent: Agentic Formal Verification for Mathematical Research](https://arxiv.org/abs/2611.21299)
-5. [SciResearch-Eval: Evaluating Scientific Judgment in Autonomous Experimental Agents](https://arxiv.org/abs/2611.21541)
+1. [PhysScope: Agentic Multimodal Physics Reasoning with Grounded Visual Memory](https://arxiv.org/abs/2611.23010)
+2. [Synergizing Evidence Retrieval and Utilization for Self-Improving Multimodal Scientific Document Reasoning](https://arxiv.org/abs/2611.22837)
+3. [ForecastGym: A Live, Controlled, and Replayable Benchmark for Forecasting Agents](https://arxiv.org/abs/2611.23045)
+4. [RagHarnessDebugger: Jev-Guided Agentic RAG in Contract Inference Repair Auditing](https://arxiv.org/abs/2611.22991)
+5. [Learning Agent-Centric Vision-Language-Action World Models for Autonomous Driving](https://arxiv.org/abs/2611.22880)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-17.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-17.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-18.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-18.id.md)
 
-**Stats:** 29 digests · 290 papers archived · last updated 2026-11-17
+**Stats:** 30 digests · 300 papers archived · last updated 2026-11-18
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
