@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-11-18
+### 📅 2026-11-19
 
-1. [PhysScope: Agentic Multimodal Physics Reasoning with Grounded Visual Memory](https://arxiv.org/abs/2611.23010)
-2. [Synergizing Evidence Retrieval and Utilization for Self-Improving Multimodal Scientific Document Reasoning](https://arxiv.org/abs/2611.22837)
-3. [ForecastGym: A Live, Controlled, and Replayable Benchmark for Forecasting Agents](https://arxiv.org/abs/2611.23045)
-4. [RagHarnessDebugger: Jev-Guided Agentic RAG in Contract Inference Repair Auditing](https://arxiv.org/abs/2611.22991)
-5. [Learning Agent-Centric Vision-Language-Action World Models for Autonomous Driving](https://arxiv.org/abs/2611.22880)
+1. [Depth Before Breadth: Reverse-to-Forward Curriculum with Advantage Decomposition for LLM Agent](https://arxiv.org/abs/2611.24697)
+2. [Piccolo: Co-Evolving Decision Models and Data through Recursive Self-Improvement](https://arxiv.org/abs/2611.24651)
+3. [Large Language Models or AI Agents for English to Arabic Translation? An assessment on WikiEn-Ar190](https://arxiv.org/abs/2611.24588)
+4. [NaviGATE: Noise-Aware Dual-View Generation for Multimodal Knowledge Graph Reasoning](https://arxiv.org/abs/2611.24552)
+5. [ProbMedTOD: A Bayesian Network Guided Task-Oriented Dialogue System for Patient History Taking](https://arxiv.org/abs/2611.24535)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-18.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-18.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-19.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-19.id.md)
 
-**Stats:** 30 digests · 300 papers archived · last updated 2026-11-18
+**Stats:** 31 digests · 310 papers archived · last updated 2026-11-19
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
