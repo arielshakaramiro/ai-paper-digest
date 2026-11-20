@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-11-19
+### 📅 2026-11-20
 
-1. [Depth Before Breadth: Reverse-to-Forward Curriculum with Advantage Decomposition for LLM Agent](https://arxiv.org/abs/2611.24697)
-2. [Piccolo: Co-Evolving Decision Models and Data through Recursive Self-Improvement](https://arxiv.org/abs/2611.24651)
-3. [Large Language Models or AI Agents for English to Arabic Translation? An assessment on WikiEn-Ar190](https://arxiv.org/abs/2611.24588)
-4. [NaviGATE: Noise-Aware Dual-View Generation for Multimodal Knowledge Graph Reasoning](https://arxiv.org/abs/2611.24552)
-5. [ProbMedTOD: A Bayesian Network Guided Task-Oriented Dialogue System for Patient History Taking](https://arxiv.org/abs/2611.24535)
+1. [Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation](https://arxiv.org/abs/2611.26444)
+2. [Learning to Think with Images Faithfully via Adaptive Data Selection](https://arxiv.org/abs/2611.26199)
+3. [Multimodal Error Detection in Chest X-ray Reports: A Large Language Model Reading Image Evidence](https://arxiv.org/abs/2611.26492)
+4. [Beam Model Technical Report](https://arxiv.org/abs/2611.26358)
+5. [ResVision: Spectrum-Matched Resizing and Context-Preserving Inspection for Visual Reasoning](https://arxiv.org/abs/2611.26318)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-19.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-19.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-20.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-20.id.md)
 
-**Stats:** 31 digests · 310 papers archived · last updated 2026-11-19
+**Stats:** 32 digests · 320 papers archived · last updated 2026-11-20
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
