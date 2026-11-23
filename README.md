@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-11-20
+### 📅 2026-11-23
 
-1. [Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation](https://arxiv.org/abs/2611.26444)
-2. [Learning to Think with Images Faithfully via Adaptive Data Selection](https://arxiv.org/abs/2611.26199)
-3. [Multimodal Error Detection in Chest X-ray Reports: A Large Language Model Reading Image Evidence](https://arxiv.org/abs/2611.26492)
-4. [Beam Model Technical Report](https://arxiv.org/abs/2611.26358)
-5. [ResVision: Spectrum-Matched Resizing and Context-Preserving Inspection for Visual Reasoning](https://arxiv.org/abs/2611.26318)
+1. [Can Vision-Language Models Synthesize Executable Game-Playing Programs?](https://arxiv.org/abs/2611.27741)
+2. [Fix Where It Fails: Root-Cause-Guided Agentic Harness Optimization for Scene Graph Generation](https://arxiv.org/abs/2611.27529)
+3. [RoSci: Exploring Robustness in Science VLMs](https://arxiv.org/abs/2611.27750)
+4. [AutoOntologyBench: A Task-Grounded Benchmark for Agentic Knowledge Engineering](https://arxiv.org/abs/2611.27734)
+5. [When Visually Rich Documents Meet Multi-Vector Retrieval for Region-level Retrieval-Augmented Generation](https://arxiv.org/abs/2611.27542)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-20.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-20.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-23.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-23.id.md)
 
-**Stats:** 32 digests · 320 papers archived · last updated 2026-11-20
+**Stats:** 33 digests · 330 papers archived · last updated 2026-11-23
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
