@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-11-23
+### 📅 2026-11-24
 
-1. [Can Vision-Language Models Synthesize Executable Game-Playing Programs?](https://arxiv.org/abs/2611.27741)
-2. [Fix Where It Fails: Root-Cause-Guided Agentic Harness Optimization for Scene Graph Generation](https://arxiv.org/abs/2611.27529)
-3. [RoSci: Exploring Robustness in Science VLMs](https://arxiv.org/abs/2611.27750)
-4. [AutoOntologyBench: A Task-Grounded Benchmark for Agentic Knowledge Engineering](https://arxiv.org/abs/2611.27734)
-5. [When Visually Rich Documents Meet Multi-Vector Retrieval for Region-level Retrieval-Augmented Generation](https://arxiv.org/abs/2611.27542)
+1. [From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems](https://arxiv.org/abs/2611.31063)
+2. [OmniV-Bench: Can MLLMs Comprehend Immersive Spatio-temporal Scenes?](https://arxiv.org/abs/2611.31022)
+3. [CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting](https://arxiv.org/abs/2611.31185)
+4. [TowerBridge: Bridging the Dual-Encoder Modality Gap via Weight-Space Programming](https://arxiv.org/abs/2611.31233)
+5. [Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action](https://arxiv.org/abs/2611.31240)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-23.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-23.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-24.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-24.id.md)
 
-**Stats:** 33 digests · 330 papers archived · last updated 2026-11-23
+**Stats:** 34 digests · 340 papers archived · last updated 2026-11-24
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
