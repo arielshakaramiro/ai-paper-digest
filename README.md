@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-11-24
+### 📅 2026-11-25
 
-1. [From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems](https://arxiv.org/abs/2611.31063)
-2. [OmniV-Bench: Can MLLMs Comprehend Immersive Spatio-temporal Scenes?](https://arxiv.org/abs/2611.31022)
-3. [CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting](https://arxiv.org/abs/2611.31185)
-4. [TowerBridge: Bridging the Dual-Encoder Modality Gap via Weight-Space Programming](https://arxiv.org/abs/2611.31233)
-5. [Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action](https://arxiv.org/abs/2611.31240)
+1. [SOARS: System One Assisted Reranking for Agentic Search](https://arxiv.org/abs/2611.32917)
+2. [OmniHarness-RSI: Modality-Aware Harness Evolution for Omnimodal Understanding](https://arxiv.org/abs/2611.32951)
+3. [Lost on Campus: Evaluating Embodied Spatial Reasoning of Vision-Language Models in the Wild](https://arxiv.org/abs/2611.33145)
+4. [Leto: Utility-Centric Agent Memory](https://arxiv.org/abs/2611.33005)
+5. [RubikSQL-HB: Agentic Text-to-SQL with Knowledge in the Loop](https://arxiv.org/abs/2611.32772)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-24.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-24.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-25.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-25.id.md)
 
-**Stats:** 34 digests · 340 papers archived · last updated 2026-11-24
+**Stats:** 35 digests · 350 papers archived · last updated 2026-11-25
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
