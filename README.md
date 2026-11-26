@@ -7,17 +7,17 @@ The archive grows into a searchable record of what the field is publishing, plus
 ## Latest digest
 
 <!-- LATEST_DIGEST_START -->
-### 📅 2026-11-25
+### 📅 2026-11-26
 
-1. [SOARS: System One Assisted Reranking for Agentic Search](https://arxiv.org/abs/2611.32917)
-2. [OmniHarness-RSI: Modality-Aware Harness Evolution for Omnimodal Understanding](https://arxiv.org/abs/2611.32951)
-3. [Lost on Campus: Evaluating Embodied Spatial Reasoning of Vision-Language Models in the Wild](https://arxiv.org/abs/2611.33145)
-4. [Leto: Utility-Centric Agent Memory](https://arxiv.org/abs/2611.33005)
-5. [RubikSQL-HB: Agentic Text-to-SQL with Knowledge in the Loop](https://arxiv.org/abs/2611.32772)
+1. [Tracking Any Point with Agentic Visual Reasoning](https://arxiv.org/abs/2611.34943)
+2. [AliceAI-Foundation-80B-A3B-Base](https://arxiv.org/abs/2611.34529)
+3. [RoboEvo$^2$: Recursive Robot Self-Improvement via Harness-Policy Co-Evolution](https://arxiv.org/abs/2611.34675)
+4. [Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation](https://arxiv.org/abs/2611.34907)
+5. [TASK Memory: Beyond Text-Only Memory with Activation Steering and Knowledge Editing against Memory Hallucination](https://arxiv.org/abs/2611.34762)
 
-➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-25.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-25.id.md)
+➡️ 🇬🇧 [Read the full digest](digests/2026/11/2026-11-26.md) · 🇮🇩 [Baca digest lengkap](digests/2026/11/2026-11-26.id.md)
 
-**Stats:** 35 digests · 350 papers archived · last updated 2026-11-25
+**Stats:** 36 digests · 360 papers archived · last updated 2026-11-26
 <!-- LATEST_DIGEST_END -->
 
 ## How it works
